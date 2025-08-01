@@ -1,0 +1,251 @@
+/* Cài đặt tổng quát cho body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Banner */
+.banner {
+    background-image: url('./thrift.jpg'); /* Thay đổi hình ảnh banner ở đây */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Chiều cao của banner */
+    display: flex; /* Để căn giữa nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa nội dung văn bản */
+    padding: 20px; /* Padding cho banner */
+}
+
+
+/* Điều chỉnh màu sắc cho văn bản trong banner */
+.banner h2, .banner p {
+    color: rgba(247, 246, 241, 0.984); /* Đổi màu chữ thành màu đen */
+    text-shadow: none; /* Bỏ hiệu ứng đổ bóng nếu không cần */
+    text-decoration: dashed;
+}
+
+/* Phong cách cho tiêu đề sản phẩm */
+.product-list h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Card sản phẩm */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s; /* Hiệu ứng khi hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Tăng kích thước card khi hover */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Bo góc cho hình ảnh card */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Chỉnh sửa một số thuộc tính Bootstrap */
+.btn-warning {
+    background-color: #f4b41a;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #333;
+    color: #f4b41a;
+}
+footer {
+    background-color: #f88009;
+    padding: 20px 0;
+    color: black;
+    margin-top: 20px;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+  
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+  
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+  
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+  
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+.popular-keywords {
+    margin-top: 30px;
+}
+
+/* Tùy chỉnh cho nút giỏ hàng và đăng tin */
+.btn-outline-light {
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+
+.banner h2, .banner p {
+    color: white; /* Giữ màu chữ trắng cho độ rõ */
+}
+
+.navbar .d-flex.mx-auto {
+    flex: 1; /* Cho phép thanh tìm kiếm chiếm hết không gian còn lại */
+    justify-content: center; /* Căn giữa nội dung trong form */
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 300px; /* Điều chỉnh chiều cao hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+.slider-produc-one-content {
+    background-color: white;
+    /* padding: 12px; */
+    margin-top: 15px;
+    width: 100%;
+}
+
+.slider-produc-one-content-title h2 {
+    font-style: italic;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.slider-produc-one-content-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.slider-produc-one-content-item:hover > img {
+    transform: translateY(-10px);
+}
+
+.slider-produc-one-content-item {
+    width: 250px;  /* Đặt kích thước cố định cho sản phẩm */
+    background-color: white;
+    padding: 30px 12px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+}
+
+.slider-produc-one-content-item > img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.slider-produc-one-content-item-text li {
+    list-style-type: none;
+}
+
+.slider-produc-one-content-item-text {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.slider-produc-one-content-item-text li:first-child {
+    height: 30px;
+    width: 92%;
+    background-color: rgb(9, 144, 211);
+    display: inline-block;
+    margin-bottom: 20px;
+    align-items: center;
+    line-height: 30px;
+    border-radius: 40px;
+}
+
+.slider-produc-one-content-item-text img p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.slider-produc-one-content-item-text img {
+    width: 30px;
+    float: left;
+    margin-right: 6px;
+}
+
+.slider-produc-one-content-item-text li:nth-child(2):hover {
+    color: #ff9500;
+}
+
+.slider-produc-one-content-item-text li:last-child i {
+    color: #fff200;
+}
+
+.slider-produc-one-content-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.slider-produc-one-content-btn {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-produc-one-content-btn i {
+    color: #333;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(253, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.slider-produc-one-content-items-total {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+

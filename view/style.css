@@ -1,0 +1,215 @@
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .banner {
+            background-image: url('../images/banner2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .filter-sidebar {
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+            position: -webkit-sticky; /* Để hỗ trợ trình duyệt cũ */
+            position: sticky;
+            top: 40px; /* Giữ khoảng cách từ phía trên */
+            z-index: 10; 
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        /* Remove underline and set text color for links */
+        a {
+            text-decoration: none; /* Remove underline */
+            color: black; /* Set text color to black */
+        }
+
+        /* Optional: Change color on hover */
+        a:hover {
+            color: #007bff; /* Optional: Change color on hover (blue) */
+        }
+
+        .product {
+            border: 1px solid white;
+            padding: 10px;
+            width: calc(30% - 20px);
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product:hover {
+            transform: translateY(-5px); /* Move the card up slightly */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+            border: 2px solid white; /* Optionally add a border */
+            background-color: white; /* Change background color on hover */
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .chat-button i, .call-button i {
+            font-size: 1.2rem;
+        }
+        .heart-button {
+            font-size: 24px; /* Adjust size as needed */
+            color: white; /* Default color */
+            position: relative; /* Position for the pseudo-element */
+            display: inline-block; /* Display as inline block */
+        }
+
+        .heart-button::before {
+            content: ''; /* Pseudo-element for the outline */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%; /* Round shape */
+            border: 2px solid red; /* Red outline */
+            background-color: white; /* White fill */
+            z-index: -1; /* Place behind the icon */
+        }
+
+        .heart-button.active {
+            color: red; /* Change icon color to red */
+        }
+
+        .heart-button.active::before {
+            background-color: red; /* Fill background with red */
+            border: none; /* Remove the outline */
+        }
+        .category-card {
+            position: relative;
+            width: 150px; /* Đặt kích thước cố định cho thẻ */
+            height: 140px; /* Tùy chỉnh chiều cao */
+            background-color: #f9f9f9; /* Màu nền tùy chọn */
+            border: 1px solid #ddd; /* Đường viền tùy chọn */
+            border-radius: 8px; /* Bo góc */
+            overflow: hidden; /* Ẩn phần dư thừa nếu có */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tùy chọn: Hiệu ứng bóng */
+            display: flex; /* Canh giữa nội dung */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .category-icon {
+            width: 80px; /* Đặt chiều rộng cố định */
+            height: 80px; /* Đặt chiều cao cố định */
+            object-fit: cover; /* Đảm bảo hình ảnh giữ tỉ lệ mà không bị méo */
+            border-radius: 50%; /* Biến hình thành hình tròn */
+            margin-bottom: 8px; /* Khoảng cách giữa hình và văn bản */
+        }
+        
+        .category-link {
+            text-decoration: none; /* Xóa gạch chân */
+            color: orange; /* Kế thừa màu chữ */
+            display: flex; /* Sắp xếp nội dung trong link */
+            flex-direction: column; /* Xếp nội dung theo chiều dọc */
+            align-items: center; /* Canh giữa nội dung theo chiều ngang */
+            width: 100%;
+            height: 100%;
+        }
+        
+        .category-link span {
+            text-align: center; /* Canh giữa chữ */
+            font-size: 18px; /* Kích thước chữ */
+            font-weight: bold; /* Chữ đậm */
+            color: orange; /* Màu chữ */
+        }
+        .category-card:hover {
+            transform: translateY(-5px); /* Nổi lên 10px */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng độ bóng */
+        }
+        
+        .category-card-view {
+            position: relative;
+            width: 150px; /* Đặt kích thước cố định cho thẻ */
+            height: 140px; /* Tùy chỉnh chiều cao */
+            background-color: #f9f9f9; /* Màu nền tùy chọn */
+            border: 1px solid #ddd; /* Đường viền tùy chọn */
+            border-radius: 8px; /* Bo góc */
+            overflow: hidden; /* Ẩn phần dư thừa nếu có */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tùy chọn: Hiệu ứng bóng */
+            display: flex; /* Canh giữa nội dung */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .category-card-view:hover {
+            transform: translateY(-5px); /* Move the card up slightly */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+            
+        }
+
+        footer {
+            background-color: #f88009;
+            padding: 20px 0;
+            color: black;
+            margin-top: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+            color: #ddd;
+        }
+        .swiper {
+            background-color: white;
+            position: -webkit-sticky; /* Để hỗ trợ trình duyệt cũ */
+            position: sticky;
+            top: 0.1px; /* Giữ khoảng cách từ phía trên */
+            z-index: 10; 
+        }
+        
+ 

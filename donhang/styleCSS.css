@@ -1,0 +1,125 @@
+/* Chung */
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex-grow: 1;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Content */
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bảng đơn hàng */
+.table thead th {
+    background-color: #343a40;
+    color: white;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.table td, .table th {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Tiêu đề và các nút */
+.content h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Nút hành động */
+.action-buttons .btn {
+    margin: 0 5px;
+}
+
+/* Số lượng */
+.badge {
+    margin-left: 5px;
+    background-color: #007bff;
+    color: white;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Chỉnh sửa một số thuộc tính Bootstrap */
+.btn-warning {
+    background-color: #f4b41a;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #333;
+    color: #f4b41a;
+}
+footer {
+    background-color: #f88009;
+    padding: 20px 0;
+    color: black;
+    margin-top: 20px;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+  
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+  
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+  
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+  
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}

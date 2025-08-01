@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+}
+.main {
+    width: 1200px;
+    border: none;
+    margin: 20px auto;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+}
+
+.btn-warning {
+    background-color: #f4b41a;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #333;
+    color: #f4b41a;
+}
+
+/* .custom-select-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Tiêu đề cho form */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Kiểu dáng cho label và input */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Kiểu dáng cho nút */
+.btn-dangtin {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-dangtin:hover {
+    background-color: #0056b3;
+}
+
+
+/* footer {
+    background-color: #f88009;
+    padding: 20px 0;
+    color: black;
+    margin-top: 20px;
+} */
+  
+/* .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+  
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+  
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+  
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+  
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #ddd;
+} */
